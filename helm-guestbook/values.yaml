@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: gcr.io/my-gcp-learning-dev/ks-guestbook-demo
-  tag: 0.2
+  tag: 0.3
   pullPolicy: IfNotPresent
 
 service:
