@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kustomize-guestbook-2
+  namespace: argocd
+spec:
+  destination:
+    namespace: dfault 
+    server: 'https://kubernetes.default.svc'
+  source:
+    repoURL: 'https://github.com/dwi-mfbcs/argocd-example-apps.git'
+    path: helm-guestbook
+    targetRevision: HEAD
+  project: default
+  syncPolicy: {}
