@@ -2,7 +2,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   annotations:
-    argocd-image-updater.argoproj.io/image-list: gcr.io/my-gcp-learning-dev/docker-getting-started:~0.1
+    argocd-image-updater.argoproj.io/image-list: the-image:gcr.io/my-gcp-learning-dev/docker-getting-started:0.1
+    argocd-image-updater.argoproj.io/the-image.update-strategy: digest
   name: kustomize-getting-started
   namespace: argocd
 spec:
