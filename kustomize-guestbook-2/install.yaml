@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: dfault 
+    namespace: default 
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://github.com/dwi-mfbcs/argocd-example-apps.git'
